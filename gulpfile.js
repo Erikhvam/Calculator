@@ -10,7 +10,7 @@ function compileSass() {
         .pipe(browserSync.stream());
 }
 
-function liveDev() {
+function dev() {
     browserSync.init({
         server: {
             baseDir: 'src'
@@ -22,4 +22,4 @@ function liveDev() {
 }
 
 exports.compileSass = compileSass;
-exports.liveDev = liveDev;
+exports.dev = dev;

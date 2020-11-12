@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Form</title>
+    <title>Calculator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -15,9 +15,40 @@
 	<!--<script src="js/validation-custom.js"></script> -->
 </head>
 <body>
-
-      <script src="js/test.js"></script>
-    </body>
-
-    
+    <div class="calculatorwrap">
+        <div class="rowbuttons">
+            <div class="resultbar">
+                <span class="result"></span>
+            </div>
+        </div>
+        <div class="rowbuttons">
+            <button class="cbutton" value="C" onclick="clearResult()">C</button>  
+            <button value="back" onclick="removeNum()">←</button> 
+            <button value="divide" onclick="operation(this)">&divide;</button> 
+        </div>
+        <div class="rowbuttons">
+            <button value="7" onclick="buttonClick(this)">7</button>  
+            <button value="8" onclick="buttonClick(this)">8</button>  
+            <button value="9" onclick="buttonClick(this)">9</button>
+            <button value="multiply" onclick="operation(this)">&times;</button>   
+        </div>
+        <div class="rowbuttons">
+            <button value="4" onclick="buttonClick(this)">4</button>  
+            <button value="5" onclick="buttonClick(this)">5</button>  
+            <button value="6" onclick="buttonClick(this)">6</button>
+            <button value="sub" onclick="operation(this)">-</button>
+        </div>
+        <div class="rowbuttons">
+            <button value="1" onclick="buttonClick(this)">1</button>  
+            <button value="2" onclick="buttonClick(this)">2</button>  
+            <button value="3" onclick="buttonClick(this)">3</button>
+            <button value="adds" onclick="operation(this)">+</button>  
+        </div> 
+        <div class="rowbuttons">
+            <button class="zerobutton" value="0" onclick="buttonClick(this)">0</button>  
+            <button value="equals">=</button>    
+        </div> 
+    </div>
+<script src="js/calculator.js"></script>
+</body>
 </html>
